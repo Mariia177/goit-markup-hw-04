@@ -12,6 +12,7 @@
 /* лого #4D5AE5 */
 /* лого #2E2F42 */
 /* text-footer*/
+/* customers-color */
 :root {
     --primary-text-color: #434455;
     --title-text-color: #2E2F42;
@@ -20,6 +21,7 @@
     --secondary-fond-color: #2E2F42;
     --secondary-color-photocard: #F4F4FD;
     --text-color-footer: #E7E9FC;
+    --customers-color: #8E8F99;
 }
 
 img{
@@ -221,8 +223,6 @@ font-family: Roboto, sans-serif;
    .hero {
     text-align: center;
     margin-top: 0;
-    padding-top: 188px;
-    padding-bottom: 188px;
     background-color:#2E2F42; 
    }
 
@@ -231,6 +231,7 @@ font-family: Roboto, sans-serif;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    padding: 188px 0;
      
     background-image: linear-gradient(
       to right, 
@@ -448,13 +449,80 @@ padding-bottom: 120px;
                 
         .specialty-section{
         margin-top: 0;
-    
+        margin-bottom: 8px;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         text-align: center;
         letter-spacing: 0.02em;
              }
+
+           /*customers*/
+         .title{
+            font-size: 36px;
+            line-height: 1.11;
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+            text-align: center;
+            margin-bottom: 72px;
+            margin-top: 130px;
+            color:#2E2F42;
+           }
+         .customers-list{
+            color: var(--customers-color);
+            line-height: 1.5;
+               display: flex;
+               gap: 24px;
+              list-style: none;
+               justify-content: center;
+            padding-left: 0px;
+            padding-bottom: 120px;
+              flex-direction: row;
+              align-items: center;
+            } 
+            .information-company{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--customers-color);
+            border-radius: 4px;
+           } 
+           .icons-company{
+            fill: var(--customers-color);
+            height: 56px;
+            width: 104px;
+           }
+             
+           /*
+           .information-company:hover{
+            color: #404BBF;
+           }
+           .information-company:focus{
+            color: #404BBF;
+           }*/
+
+            .icons-company{
+            fill: var(--customers-color);
+            height: 56px;
+            width: 104px;
+           }
+             
+           
+
+
+
+
+            .container-item{
+            width: 168px;
+            height: 88px;
+          }
+
+
+
+
+
 
 
           /* Footer */
@@ -490,6 +558,14 @@ padding-bottom: 120px;
    /* socials footer */ 
    .text-socials{
     text-align: center;
+    color: #FFFFFF;
+    font-size: 16px; 
+    line-height: 24px;
+   }
+   .container-footer{
+   margin-left: auto;
+   margin-right: auto;
+  
    }
    
                   .socials-footer{
@@ -547,15 +623,15 @@ padding-bottom: 120px;
       /* section */
                      
       .team-list{
-        height: 770px;
-        width: 1440px;
+       
        
         margin-left: auto;
         margin-right: auto;
-      
       }
 
-
+      .customers{
+     
+      }
 
 
 
@@ -566,6 +642,7 @@ padding-bottom: 120px;
         gap: 24px;
         list-style: none;
         justify-content: center;
+        padding-left: 0px;
      }
 
 
