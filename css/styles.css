@@ -226,6 +226,28 @@ font-family: Roboto, sans-serif;
     background-color:#2E2F42; 
    }
 
+   .overlay{
+    height: 600px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+     
+    background-image: linear-gradient(
+      to right, 
+      rgba(46, 47, 66, 0.7), 
+      rgba(46, 47, 66, 0.7)
+    ),  
+     url(../images/people-office\(1\).jpg);
+     background-color:#2E2F42;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+   } 
+/*box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);*/
+
+
+
 
 
 
@@ -293,6 +315,34 @@ font-family: Roboto, sans-serif;
     width: 264px;
 }
 
+ 
+   
+   .right::before{
+    display: block;
+    content:"";
+   height: 112px;
+   outline: 1px;
+   background-color:#F4F4FD;
+   border-radius: 4px;
+   background-repeat: no-repeat;
+   background-position: center;
+ }
+ .icon-vector::before{
+    background-image: url(../images/group.svg.svg);
+ }
+.icon-cloc::before{
+    background-image: url(../images/clock.svg.svg);
+}
+.icon-diagram::before{
+    background-image: url(../images/diagram.svg.svg);
+}
+.icon-astronaut::before{
+    background-image: url(../images/astronaut.svg.svg);
+}
+
+
+
+
 .advantages{
     padding-top: 120px;
     padding-bottom: 120px;
@@ -356,7 +406,8 @@ padding-bottom: 120px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        color: var(--secondary-fond-color)
+        color: var(--secondary-fond-color);
+        padding-top: 8px;
         
     }
 
@@ -406,12 +457,6 @@ padding-bottom: 120px;
              }
 
 
-
-
-
-
-   
-
           /* Footer */
 
     .footer {
@@ -442,6 +487,46 @@ padding-bottom: 120px;
                 margin-top: 16px;
                   } 
 
+   /* socials footer */ 
+   .text-socials{
+    text-align: center;
+   }
+   
+                  .socials-footer{
+                    width: 40px;
+                    height: 40px;
+                  }
+             .socials-list-footer{
+                display: flex;
+                gap: 16px;
+                list-style: none;
+                justify-content: center;
+             }
+             .icon-footer{
+                margin-top: 8px;
+                margin-left: 8px;
+                margin-bottom: 8px;
+                width: 24px;
+                height: 24px;
+                fill:var(--secondary-color-photocard)
+             }
+             .socials-link-footer{
+               display: flex;
+               align-items: center;
+               width: 100%;
+               height: 100%;
+               background-color: rgba(255, 255, 255, 0.1);
+               border-radius: 50%;
+             } 
+             .socials-link-footer:focus{
+                background-color: rgba(49, 208, 170, 1);
+             }
+             .socials-link-footer:hover{
+               background-color: rgba(49, 208, 170, 1);
+             }
+                
+            
+
     .pecture-bottom  {
         padding-bottom: 32px;
         padding-top: 32px;
@@ -459,6 +544,22 @@ padding-bottom: 120px;
         border-bottom: 1px solid #E7E9FC;  ;
      }
  
+      /* section */
+                     
+      .team-list{
+        height: 770px;
+        width: 1440px;
+       
+        margin-left: auto;
+        margin-right: auto;
+      
+      }
+
+
+
+
+
+
        /* Social */
      .socials-list{
         display: flex;
@@ -483,16 +584,21 @@ padding-bottom: 120px;
       background-color: var(--accent-color);
       border-radius: 50%;
      }
-
+      .socials-link:hover {
+       background-color:#404BBF;
+      }
+      .socials-link:focus {
+        background-color: #404BBF;
+      }
 
      .socials-icon{
       width: 16px;
       height: 16px;
-      fill: #F4F4FD;
+      fill: var(--secondary-color-photocard);
      }
 
 
-
+     .
  
 
 
@@ -507,8 +613,8 @@ padding-bottom: 120px;
 /* logo #F4F4FD */
 /* кнопка активна #404BBF */
 /* неактивна кнопка #4D5AE5 */
-
-:root{
+ 
+ :root {
     --main-color-text: #2E2F42;
     --color-secondary-text: #434455;
     --color-maket: #FFFFFF;
