@@ -497,7 +497,7 @@ padding-bottom: 120px;
             border-radius: 4px;
            } 
                  .icons-company{
-            fill: var(--customers-color);
+            fill:currentColor;
             height: 56px;
             width: 104px;
            }
@@ -513,9 +513,9 @@ padding-bottom: 120px;
             color: #404BBF;
            }
            .information-company:focus{
-            color: #404BBF;
+            color: #8E8F99;
            }
-
+           #404BBF
                   
 
 
