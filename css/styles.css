@@ -93,8 +93,6 @@ h4 {
      }
   
 
-    
-
 
 body {
 font-size: 16px;   
@@ -533,9 +531,7 @@ padding-bottom: 120px;
            .footer {
             display: flex;
             background-color:var(--color-footer);
-            top: 2280px;
-            padding-top: 100px;
-            padding-bottom: 100px;
+            padding: 100px 0px;
              }
 
             .accent{
@@ -561,30 +557,42 @@ padding-bottom: 120px;
 
    /* socials footer */ 
    .text-socials{
+    font-family: "Roboto";
+    font-style: normal;
     text-align: center;
-    color:var(--color-maket);
     font-size: 16px; 
     line-height: 1.5;
     font-weight: 500;
     letter-spacing: 0.02em;
-    
+               /* margin-right: 56px; */
+    color: var(--color-white);
+    margin-bottom: 16px;
    }
    .container-footer{
-   
-    width: 1158px;
-    
-  
+    height: 80px;
+    width: 208px;
+    margin: 0 0 0 120px;
+    padding: 0;
    }
    
+   .foot-tex{
+    display:flex;
+    background-color: var(--color-footer);
+   }
               .socials-footer{
                     width: 40px;
                     height: 40px;
                   }
              .socials-list-footer{
-                display: flex;
+              /*  display: flex;
                 gap: 16px;
                 list-style: none;
-                justify-content: center;
+                justify-content: center; */
+
+    height: 40px;
+    width: 208px;
+    display: flex;
+    gap: 16px;
              }
              .icon-footer{
                 margin-top: 8px;
