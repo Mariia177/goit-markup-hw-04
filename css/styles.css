@@ -337,6 +337,7 @@ font-family: Roboto, sans-serif;
    border-radius: 4px;
    background-repeat: no-repeat;
    background-position: center;
+   margin-bottom: 8px;
  }
  .icon-vector::before{
     background-image: url(../images/group.svg.svg);
@@ -687,13 +688,16 @@ cursor: pointer;
 
 }
 
-.portfolio:hover, 
-.portfolio:focus{
+.portfolio-link:hover, 
+.portfolio-link:focus{
     box-shadow: 0px 1px 6px rgb(46 47 66 / 8%),
                 0px 1px 1px rgb(46 47 66 / 16%),
-                0px 2px 1px rgb(46 47 66 / 8%);
-                background-color: var(--color-maket);
-    }      
+                0px 2px 1px rgb(46 47 66 / 8%);         
+    } 
+     
+    .portfolio-link{
+        display: block;
+    }    
 
    .portfolio{
     padding-bottom: 120px;
